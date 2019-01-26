@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+/* Base Styles */
+/* nav ul = unordered list
+nav li = list item
+nav a = the a href link 
+some elements I want to change together so they are grouped together and some I want to change individually so they are listed alone. ex) nav a  vs nav ul li a.
+**refer to nav section in header.php to see details*/ 
+
+nav {
+  width: 100%;
+  background:rgba(232,239, 252,.40);
+  height: 70px;
+  overflow: hidden;    
+}
+
+nav a {
+    padding-top:20px;
+    font-size:1.2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: -4px;
+  width: 25%;
+  height: 100%;
+}
+
+nav ul li a {
+  color: red;
+  text-decoration: none;
+  font-weight:700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  line-height: 65px;   
+}
+
+nav a:hover, a:active {
+  background: url(../images/drink3.jpg);
+}
+
+@media all and (max-width: 790px) {
+  #cssmenu ul ul {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}
+
