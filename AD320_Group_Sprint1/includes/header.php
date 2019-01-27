@@ -23,6 +23,7 @@
 <!--header is usually where banner goes and nav can go in here as well but doesn't have to-->
 <header>
 <div class="div1">
+
 </div>
 </header>
 <br>
@@ -33,10 +34,12 @@
 <!--START NAV -->
 <nav>
    <ul>
-  <li><a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a></li>
-  <li><a href="page1.php">Page1</a></li>
-  <li><a href="page2.php">Page2</a></li>
-  <li><a href="page3.php">Page3</a></li>
+  <li id="nhome"><a href="index.php"><i class="fa fa-fw fa-home"></i> </a></li> 
+  <li><a href="create.php">Create</a></li>
+  <li><a href="delete1.php">Delete</a></li>
+  <li><a href="update.php">Update</a></li>
+  <li><a 
+  href="read.php">Read</a></li>
 </ul> 
 </nav>
 <!-- END NAV -->
