@@ -11,16 +11,20 @@ switch(THIS_PAGE)
     $title = "AD320_Group_Sprint"; 
     break;      
         
-    case 'Page1.php': 
-    $title = "Page1"; 
+    case 'create.php': 
+    $title = "create"; 
     break;
         
-    case 'Page2.php': 
-    $title = "Page2"; 
+    case 'delete1.php': 
+    $title = "delete"; 
     break;
     
-    case 'Page3.php': 
-    $title = "Page3"; 
+    case 'update.php': 
+    $title = "update"; 
+    break;
+    
+    case 'read.php': 
+    $title = "read"; 
     break;
         
     default: 
