@@ -23,9 +23,9 @@
 <!--header is usually where banner goes and nav can go in here as well but doesn't have to-->
 <header>
 <div class="div1">
+	<h2>best happy hour</h2>
 </div>
 </header>
-<br>
 
  <!-- START WRAPPER -->
 <div class="wrapper">
@@ -33,10 +33,10 @@
 <!--START NAV -->
 <nav>
    <ul>
-  <li><a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a></li>
-  <li><a href="page1.php">Page1</a></li>
-  <li><a href="page2.php">Page2</a></li>
-  <li><a href="page3.php">Page3</a></li>
+  <li><a href="index.php">search</a></li>
+  <li><a href="page1.php">add a listing</a></li>
+  <li><a href="page2.php">update a listing</a></li>
+  <li><a href="page3.php">delete a listing</a></li>
 </ul> 
 </nav>
 <!-- END NAV -->

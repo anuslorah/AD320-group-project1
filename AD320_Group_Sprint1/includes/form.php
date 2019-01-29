@@ -1,10 +1,9 @@
-<form>
-  Bar name:<br>
-  <input type="text" name="Barname">
-  <br>
-  City:<br>
-  <input type="text" name="City">
-  <br>
-  Zip:<br>
-  <input type="text" name="ZIP">
+<form action="read.php" method="POST">
+	<label>City:</label>
+	<input type="text" name="city">
+	<br>
+	<label>Zip:</label>
+	<input type="text" name="zip">
+	<br>
+	<label></label><input type="submit" name="submit" value="search">
 </form>

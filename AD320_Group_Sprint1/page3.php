@@ -3,8 +3,7 @@
 
 
 <div id="formdiv">
-<?php include 'includes/form.php'; ?>
-</div>
+<div id="formdiv">
 
 </div> <!--this is not error/opening div is in header.php-->
 <?php include 'includes/footer.php'; ?>

@@ -12,7 +12,7 @@ switch(THIS_PAGE)
     break;      
         
     case 'Page1.php': 
-    $title = "Page1"; 
+    $title = "search for a bar"; 
     break;
         
     case 'Page2.php': 

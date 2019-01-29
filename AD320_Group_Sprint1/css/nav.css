@@ -8,44 +8,48 @@ some elements I want to change together so they are grouped together and some I 
 **refer to nav section in header.php to see details*/ 
 
 nav {
-  width: 100%;
-  background:rgba(232,239, 252,.40);
-  height: 70px;
-  overflow: hidden;    
+	width: 100%;
+/*  background:rgba(232,239, 252,.40);*/
+/*
+	background-color: #c06014;
+	height: 70px;
+*/
+  	overflow: hidden;    
 }
 
 nav a {
-    padding-top:20px;
+/*    padding-top:10px;*/
     font-size:1.2em;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 100%;
+  	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	height: 100%;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: -4px;
-  width: 25%;
-  height: 100%;
+	display: inline-block;
+	margin: 12px;
+  	width: 20%;
+  	height: 100%;
+	background-color: #1a2930;
 }
 
 nav ul li a {
-  color: red;
-  text-decoration: none;
-  font-weight:700;
-  display: block;
-  width: 100%;
-  text-align: center;
-  height: 100%;
-  line-height: 65px;   
+  	color: #eddbcd;
+  	text-decoration: none;
+  	font-weight: 700;
+  	display: block;
+  	width: 100%;
+	text-align: center;
+	height: 100%;
+  	line-height: 35px;   
 }
 
 nav a:hover, a:active {
-  background: url(../images/drink3.jpg);
+/*  background: url(../images/drink3.jpg);*/
 }
 
 @media all and (max-width: 790px) {
@@ -55,4 +59,3 @@ nav a:hover, a:active {
     width: 100%;
   }
 }
-
