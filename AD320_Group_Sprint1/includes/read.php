@@ -6,6 +6,7 @@
  * Time: 12:44 AM
  */
 
+include "header.php";
 
 if (isset($_POST['submit'])){
 
@@ -30,7 +31,7 @@ if (isset($_POST['submit'])){
         if ($resultCheck > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "Bar: ".$row['barName'].", ".$row['street'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
+                echo "Bar: ".$row['barName'].", ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
             }
         } else {
             echo "0 results";
@@ -44,7 +45,7 @@ if (isset($_POST['submit'])){
         if ($resultCheck > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "Bar: ".$row['barName'].", ".$row['street'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
+                echo "Bar: ".$row['barName'].", ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
             }
         } else {
             echo "0 results";
@@ -56,3 +57,5 @@ if (isset($_POST['submit'])){
     header("Location: ../index.php?read=error");
     exit();
 }
+
+include "footer.php";
