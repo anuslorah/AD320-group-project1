@@ -11,8 +11,8 @@ if (isset($_POST['submit'])){
 
     include 'dbh.php';
 
-    $city = mysqli_real_escape_string($conn, $_POST['city']);
-    $zip = mysqli_real_escape_string($conn, $_POST['zip']);
+    $city = $_POST['city'];
+    $zip = $_POST['zip'];
 
     //error handlers
     //check if inputs are empty
@@ -21,24 +21,33 @@ if (isset($_POST['submit'])){
         exit();
     } elseif(!empty($city)) {
 
-        $sql = "SELECT * FROM `bar` WHERE city = '$city'";
+        $sql = "SELECT * FROM bar WHERE city = '$city'";
+        if(! $conn ) {
+            die('Could not connect: ' . mysqli_error());
+        }
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
-        if ($resultCheck < 1){
-            header("Location: ../index.php?city=errorResult:$resultCheck");
-            exit();
-        } else {
-            echo $result;
+        if ($resultCheck > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "Bar: ".$row['barName'].", ".$row['street'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
             }
+        } else {
+            echo "0 results";
+        }
+
+        mysqli_close($conn);
     } elseif (!empty($zip)){
         $sql = "SELECT * FROM `bar` WHERE zipcode = '$zip'";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
-        if ($resultCheck < 1){
-            header("Location: ../index.php?zip=errorResult:$resultCheck");
-            exit();
+        if ($resultCheck > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "Bar: ".$row['barName'].", ".$row['street'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
+            }
         } else {
-            echo $result;
+            echo "0 results";
         }
     } else {
         header("Location: ../index.php?zip_city=error");
