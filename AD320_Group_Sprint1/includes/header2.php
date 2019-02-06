@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!--links to css files-->
-<link rel="stylesheet" href="css/nav.css" />
-<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="../css/nav.css" />
+<link rel="stylesheet" href="../css/main.css" />
 <!--<link rel="stylesheet" href="css/form.css" />-->
 </head>
 
@@ -33,10 +33,10 @@
 <!--START NAV -->
 <nav>
    <ul>
-  <li><a href="index.php">search</a></li>
-  <li><a href="page1.php">add a listing</a></li>
-  <li><a href="page2.php">update a listing</a></li>
-  <li><a href="page3.php">delete a listing</a></li>
+  <li><a href="../index.php">search</a></li>
+  <li><a href="../page1.php">add a listing</a></li>
+  <li><a href="../page2.php">update a listing</a></li>
+  <li><a href="../page3.php">delete a listing</a></li>
 </ul> 
 </nav>
 <!-- END NAV -->

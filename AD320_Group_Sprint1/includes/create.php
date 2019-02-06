@@ -5,7 +5,8 @@
  * Date: 1/28/2019
  * Time: 12:44 AM
  */
-
+include 'config.php';
+include 'header2.php';
 
 if (isset($_POST['submit'])){
 
@@ -28,12 +29,20 @@ if (isset($_POST['submit'])){
 
             $sql = "INSERT INTO `bar` (`barName`, `streetAddress`, `city`, `zipcode`, `phone`, `happyHour`, `awesome`) VALUES ('$name', '$street', '$city', '$zip', '$phone', '$hh', '$awesome')";
             if (mysqli_query($conn, $sql)) {
-                echo "New record created successfully";
+				echo "<div class='grid-container'>";
+				echo "<div class='grid-item'>"."<h3>";
+                echo "New record created successfully!";
+				echo "</h3>"."</div>"."</div>";
             } else {
-                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                echo "<div class='grid-container'>";
+				echo "<div class='grid-item'>"."<h3>";
+                //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+				echo "A bar with this name and the same phone number already exists in the database.";
+				echo "<h3>"."</div>"."</div>";
             }
         }
     }else {
         header("Location: ../index.php?create=error");
         exit();
     }
+include "footer2.php";
