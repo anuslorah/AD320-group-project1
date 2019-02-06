@@ -11,13 +11,13 @@ if (isset($_POST['submit'])){
 
         include 'dbh.php';
 
-        $name = mysqli_real_escape_string($conn, $_POST['name']);
-        $street = mysqli_real_escape_string($conn, $_POST['street']);
-        $city = mysqli_real_escape_string($conn, $_POST['city']);
-        $zip = mysqli_real_escape_string($conn, $_POST['zip']);
-        $phone = mysqli_real_escape_string($conn, $_POST['phone']);
-        $hh = mysqli_real_escape_string($conn, $_POST['hh']);
-        $awesome = mysqli_real_escape_string($conn, $_POST['awesome']);
+        $name = $_POST['name'];
+        $street = $_POST['street'];
+        $city =$_POST['city'];
+        $zip = $_POST['zip'];
+        $phone = $_POST['phone'];
+        $hh = $_POST['hh'];
+        $awesome = $_POST['awesome'];
 
         //error handlers
         //check if inputs are empty

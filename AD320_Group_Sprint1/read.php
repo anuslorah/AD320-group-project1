@@ -19,6 +19,7 @@ if (isset($_POST['submit'])){
     //check if inputs are empty
     if (empty($city) && empty($zip)){
         header("Location: ../index.php?field=empty");
+        echo "<h3>" . "Try entering a city or a zip code!" . "</h3>";
         exit();
     } elseif(!empty($city)) {
 
@@ -36,7 +37,7 @@ if (isset($_POST['submit'])){
             }
 			echo "</div>";
         } else {
-            echo "0 results";
+            echo "<h3>" . "There are no matching bars in the database." . "</h3>";
         }
 
         mysqli_close($conn);
@@ -53,7 +54,7 @@ if (isset($_POST['submit'])){
             }
 			echo "</div>";
         } else {
-            echo "0 results";
+            echo "<h3>" . "There are no matching bars in the database." . "</h3>";
         }
     } else {
         header("Location: ../index.php?zip_city=error");

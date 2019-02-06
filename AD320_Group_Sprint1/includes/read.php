@@ -5,8 +5,8 @@
  * Date: 1/28/2019
  * Time: 12:44 AM
  */
-
-include "header.php";
+include 'config.php';
+include 'header2.php';
 
 if (isset($_POST['submit'])){
 
@@ -29,10 +29,12 @@ if (isset($_POST['submit'])){
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck > 0) {
+            echo "<div class='grid-container'>";
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "Bar: ".$row['barName'].", ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
+				echo "<div class='grid-item'>"."Bar: ".$row['barName']."</div>". "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
             }
+			echo "</div>";
         } else {
             echo "0 results";
         }
@@ -43,10 +45,13 @@ if (isset($_POST['submit'])){
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck > 0) {
+			echo "<div class='grid-container'>"; 
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "Bar: ".$row['barName'].", ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."<br>"."Happy Hour: ".$row['hh']."<br>Awesome: ".$row['awesome']."<br><br>";
+				echo "<div class='grid-item'>"."Bar: ".$row['barName']."</div>"."<div class='grid-item'>"."Address: ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
+				
             }
+			echo "</div>";
         } else {
             echo "0 results";
         }
@@ -58,4 +63,4 @@ if (isset($_POST['submit'])){
     exit();
 }
 
-include "footer.php";
+include "footer2.php";
