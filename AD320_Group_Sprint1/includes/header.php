@@ -1,4 +1,8 @@
-<!DOCTYPE html> 
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
 <html lang = "en">
 
 <!-- The head is where you can implement meta data, javascript and css(unless you make a seperate file for them), title goes here-->
@@ -37,7 +41,8 @@
   <li><a href="page1.php">add a listing</a></li>
   <li><a href="page2.php">update a listing</a></li>
   <li><a href="page3.php">delete a listing</a></li>
-</ul> 
+</ul>
+    <?php include "includes/loginNav.inc.php" ?>
 </nav>
 <!-- END NAV -->
 
