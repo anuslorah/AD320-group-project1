@@ -32,17 +32,21 @@ if (isset($_POST['submit'])){
             echo "<div class='grid-container'>";
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "<form action=\"edit.php\" method=\"post\">
-<div class='grid-item'>Bar: ".$row['barName']."</div><div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>    <input type=\"hidden\" name=\"name\" tabindex=\"10\" size=\"30\" value='".$row['barName']."'>
-    <input type=\"hidden\" name=\"street\" tabindex=\"10\" size=\"30\" value='".$row['streetAddress']."'>
-    <input type=\"hidden\" name=\"city\" tabindex=\"10\" size=\"30\" value='".$row['city']."'>
-    <input type=\"hidden\" name=\"zip\" value='".$row['zipcode']."'>
-    <input type=\"hidden\" name=\"phone\" tabindex=\"10\" size=\"30\" value='".$row['phone']."'>
-    <input type=\"hidden\" name=\"hh\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['happyHour']."'>
-    <input type=\"hidden\" name=\"awesome\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['awesome']."'>
-    <br>
-    <input type=\"submit\" name=\"submit\" value=\"Edit\">
-</form>";
+                echo "<form action=\"edit.php\" method=\"post\">";
+				echo "<div class='grid-item'>Bar: ".$row['barName']."</div>";
+				echo "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode'];
+				echo "<br>Phone: ".$row['phone']."</div>";
+				echo "<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>";
+				echo "<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>";
+				echo "<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
+				echo "<input type=\"hidden\" name=\"name\" tabindex=\"10\" size=\"30\" value='".$row['barName'];
+				echo "'> <input type=\"hidden\" name=\"street\" tabindex=\"10\" size=\"30\" value='".$row['streetAddress'];
+				echo "'> <input type=\"hidden\" name=\"city\" tabindex=\"10\" size=\"30\" value='".$row['city'];
+				echo "'> <input type=\"hidden\" name=\"zip\" value='".$row['zipcode'];
+				echo "'> <input type=\"hidden\" name=\"phone\" tabindex=\"10\" size=\"30\" value='".$row['phone'];
+				echo "'> <input type=\"hidden\" name=\"hh\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['happyHour'];
+				echo "'> <input type=\"hidden\" name=\"awesome\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['awesome'];
+				echo "'> <input type=\"submit\" name=\"submit\" value=\"Edit\"> </form>";
             }
             echo "</div>";
         } else {
@@ -58,17 +62,21 @@ if (isset($_POST['submit'])){
             echo "<div class='grid-container'>";
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-            echo "<form action=\"edit.php\" method=\"post\">
-<div class='grid-item'>Bar: ".$row['barName']."</div><div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>    <input type=\"hidden\" name=\"name\" tabindex=\"10\" size=\"30\" value='".$row['barName']."'>
-    <input type=\"hidden\" name=\"street\" tabindex=\"10\" size=\"30\" value='".$row['streetAddress']."'>
-    <input type=\"hidden\" name=\"city\" tabindex=\"10\" size=\"30\" value='".$row['city']."'>
-    <input type=\"hidden\" name=\"zip\" value='".$row['zipcode']."'>
-    <input type=\"hidden\" name=\"phone\" tabindex=\"10\" size=\"30\" value='".$row['phone']."'>
-    <input type=\"hidden\" name=\"hh\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['happyHour']."'>
-    <input type=\"hidden\" name=\"awesome\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['awesome']."'>
-    <br>
-    <input type=\"submit\" name=\"submit\" value=\"Edit\">
-</form>";
+            echo "<form action=\"edit.php\" method=\"post\">";
+			echo "<div class='grid-item'>Bar: ".$row['barName']."</div>";
+			echo "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode'];
+			echo "<br>Phone: ".$row['phone']."</div>";
+			echo "<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>";
+			echo "<div class='grid-item'>"."Awesome: ".$row['awesome'];
+			echo "</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
+			echo "<input type=\"hidden\" name=\"name\" tabindex=\"10\" size=\"30\" value='".$row['barName'];
+			echo "'> <input type=\"hidden\" name=\"street\" tabindex=\"10\" size=\"30\" value='".$row['streetAddress'];
+			echo "'> <input type=\"hidden\" name=\"city\" tabindex=\"10\" size=\"30\" value='".$row['city'];
+			echo "'> <input type=\"hidden\" name=\"zip\" value='".$row['zipcode'];
+			echo "'> <input type=\"hidden\" name=\"phone\" tabindex=\"10\" size=\"30\" value='".$row['phone'];
+			echo "'> <input type=\"hidden\" name=\"hh\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['happyHour'];
+			echo "'> <input type=\"hidden\" name=\"awesome\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['awesome'];
+			echo "'> <input type=\"submit\" name=\"submit\" value=\"Edit\"> </form>";
 
             }
             echo "</div>";

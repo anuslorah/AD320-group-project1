@@ -33,15 +33,15 @@ div.wrapper {
 	background-color:#eddbcd;
     width:80%;
     overflow:auto;
-    height: 460px;
-    margin:0 auto;
+	padding-bottom: 20px;
+	margin:0 auto;
 	margin-top: 8px;
     text-align: center;   
 }
 
 #formdiv {
   /*--put div around form--*/    
-  margin-top:10%;      
+/*  margin-top:10%;      */
   display: inline-block; 
 }
 
@@ -52,7 +52,12 @@ div.wrapper {
 
 .grid-item2 {
 /*	border: 1px solid red;*/
-	height: 20px;
+/*	height: 20px;*/
+	text-align: left;
+}
+
+.grid-item3 {
+	width: 80%;
 }
 
 .grid-container {
@@ -80,17 +85,20 @@ button{
 */
 
 label {
-  display: inline-block;
-  width: 80px;
+/*  display: inline-block;*/
+/*  width: 80px;*/
   text-align: right;
 }
 
 input{
 /*--css for text input--*/ 
-	display: inline-block;
+/*	display: inline-block;*/
+/*
     width: 60%;
     height: 30px;
-    margin: 10px;
+*/
+	text-align: left;
+/*    margin: 10px;*/
 /*    font-size: 1.3em;*/
 }
 
