@@ -42,7 +42,6 @@ session_start();
   <li><a href="page2.php">update a listing</a></li>
   <li><a href="page3.php">delete a listing</a></li>
 </ul>
-    <?php include "includes/loginNav.inc.php" ?>
 </nav>
 <!-- END NAV -->
 
