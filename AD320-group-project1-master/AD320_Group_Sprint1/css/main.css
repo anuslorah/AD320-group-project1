@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "The Slug and Lion";
+	src: url(../images/TheSlugandLion.otf);
+}
+
+html {
+	background-color: #1a2930;
+}
+
+body{
+    margin:0;
+    padding:0;
+    
+}
+
+.div1 {
+    /* header div*/
+    overflow: hidden;
+/*    background-image: url(../images/01.jpg);*/
+	background-color: #c06014;
+/*    background-position:center;*/
+    opacity: 0.8;
+/*    filter: alpha(opacity=60); */
+    height: 120px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.div1 h2 {
+	font-family: "The Slug and Lion";
+	font-size: 70px;
+	text-align: center;
+	margin-top: 14px;
+}
+
+div.wrapper {
+    /*--main div w/nav inside--*/
+	background-color:#eddbcd;
+    width:80%;
+    overflow:auto;
+    height: 460px;
+    margin:0 auto;
+	margin-top: 8px;
+    text-align: center;   
+}
+
+#formdiv {
+  /*--put div around form--*/    
+  margin-top:10%;      
+  display: inline-block; 
+}
+
+.grid-item {
+/*	border: 1px solid black;*/
+	text-align: left;
+}
+
+.grid-item2 {
+/*	border: 1px solid red;*/
+	height: 20px;
+}
+
+.grid-container {
+	margin-top: 16px;
+	display: grid;
+	grid-gap: 12px;
+  	grid-template-columns: auto auto;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+form{
+/*--css for form--*/    
+    font-size:1.2em;
+}
+
+/*
+button{
+    display:inline-block;
+    margin:0 auto;
+    margin-top: 5%;
+    font-size: 20px;
+    background-color:aquamarine
+}
+*/
+
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+
+input{
+/*--css for text input--*/ 
+	display: inline-block;
+    width: 60%;
+    height: 30px;
+    margin: 10px;
+/*    font-size: 1.3em;*/
+}
+
+button {
+	color: #c06014;
+}
+
+footer {
+    text-align: center;
+/*    background-color: black;*/
+    opacity: .8;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+footer a:link {
+    color: #c06014;
+}
+
+footer a:visited {
+    color: #c06014;	
+}
+
+footer a:hover{
+    color: #eddbcd;
+    font-size:1.1em;
+}
+
+img:hover {  
+border:0px solid lightblue;  /* -- Increasing the px here causes icons next to it to jump --*/
+box-shadow: 0 0 10px #eddbcd;  
+}
+
+
+.footerfont{
+    color: #eddbcd;
+}
+
+.fb{
+max-width:5%;
+margin-left:5px;
+
+}
+
+.twitter {
+max-width:5%;
+margin-left:5px;
+
+}
+
+img.fb,.twitter a:link{
+    color: #eddbcd;
+}
+
+img.fb,.twitter{
+border-radius: 50%; /* --- gives round shape -- */
+}
+
+/*---start of @media query---*/
+@media all and (max-width:790px) {
+    
+    div.wrapper {
+        width: 100%;
+    }
+    
+    form{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #formdiv{
+        margin-top: 10%;
+        width: 70%;
+        display: inline-block;
+    }
+    
+    
+    footer{
+        width: 100%;
+    }
+    
+    .div1 {
+        
+        width: 100%;
+    }
+}
+
+@media all and (max-width:750px) {
+    
+    h2{
+        font-size:50px;
+    }
+    
+}
+/*---End of @media query---*/
