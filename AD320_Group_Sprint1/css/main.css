@@ -101,6 +101,10 @@ input{
 /*    margin: 10px;*/
 /*    font-size: 1.3em;*/
 }
+.submit {
+    width: 80px;
+    text-align: center;
+}
 
 button {
 	color: #c06014;

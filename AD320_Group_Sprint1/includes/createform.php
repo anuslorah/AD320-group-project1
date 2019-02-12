@@ -27,7 +27,7 @@
 		<label for="zipcode">Zip code:</label>
 	</div>
 	<div class='grid-item2'>
-		<input type="text" name="zip">
+		<input type="text" name="zip" tabindex="10" size="30">
 	</div>
 	<div class='grid-item'>
 		<label for="phone number">Phone number:</label>
@@ -39,19 +39,19 @@
 		<label for="happy hour">Time of happy hour:</label>
 	</div>
 	<div class='grid-item2'>
-		<input type="text" name="hh" rows="4" tabindex="40">
+		<input type="text" name="hh"  tabindex="10" size="30">
 	</div>
 	<div class='grid-item'>
 		<label for="awesome">Why is it awesome?</label>
 	</div>
 	<div class='grid-item2'>
-		<input type="text" name="awesome" rows="4" tabindex="40">
+        <textarea type="text" name="awesome" cols="30" rows="4" tabindex="30"></textarea>
 	</div>
 	<div class='grid-item'>
 		<label for="submit"></label>
 	</div>
 	<div class='grid-item2'>
-		<input type="submit" name="submit" value="create">
+		<input class="submit" type="submit" name="submit" value="create">
 	</div>
 </div>
 </form>
