@@ -16,6 +16,7 @@
 <!--links to css files-->
 <link rel="stylesheet" href="css/nav.css" />
 <link rel="stylesheet" href="css/main.css" />
+
 <!--<link rel="stylesheet" href="css/form.css" />-->
 </head>
 
@@ -32,7 +33,7 @@
 <div class="wrapper">
 
 <!--START NAV -->
-
+  
 <nav>
   <div class="toggle">
       <i class="fa fa-bars" aria-hidden="true"></i>
