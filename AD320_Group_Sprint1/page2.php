@@ -1,6 +1,8 @@
 <?php include 'includes/config.php'; ?>
 <?php include 'includes/header.php'; ?>
 
+
+<h2>Select a bar listing to update:</h2>
     <div id="fb">
         <?php
         if (isset($_POST['submit'])){

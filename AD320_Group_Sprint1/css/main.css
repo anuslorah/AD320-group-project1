@@ -21,12 +21,11 @@ html {
 }
 
 .div1 h2 {
-	font-family: "The Slug and Lion";
-	font-size: 80px;
-	text-align: center;
-	margin-top: 14px;
+    font-family: "The Slug and Lion";
+    font-size: 70px;
+    text-align: center;
+    margin-top: 14px;
 }
-
 div.wrapper {
     /*--main div w/nav inside--*/
 	background-color:#eddbcd;
@@ -37,6 +36,26 @@ div.wrapper {
 	margin-top: 8px;
     text-align: center;   
 }
+
+img:hover {
+    border:0px solid lightblue;  /* -- Increasing the px here causes icons next to it to jump --*/
+    box-shadow: 0 0 10px #eddbcd;
+}
+
+.twitter {
+    max-width:5%;
+    margin-left:5px;
+
+}
+
+img.fb,.twitter a:link{
+    color: #eddbcd;
+}
+
+img.fb,.twitter{
+    border-radius: 50%; /* --- gives round shape -- */
+}
+
 
 #formdiv {
   /*--put div around form--*/    
@@ -80,6 +99,16 @@ form{
     padding-bottom: 10px;
 }
 
+#login {
+    margin: 10px;
+    text-align: center;
+    font-size:1em;
+}
+#login div {
+    margin: 10px;
+}
+
+
 label {
 /*  width: 80px;*/
   text-align: right;
@@ -106,6 +135,9 @@ input{
     text-align: left;
 }
 
+#edit input {
+    font-size:1em;
+}
 #edit label{
     width: 60%;
 }
@@ -146,7 +178,7 @@ footer a:hover{
 }
 
 /*---start of @media query---*/
-@media all and (max-width:780px) {
+@media all and (max-width:790px) {
     .div1 {
         height: 60px;
         width: 90%;
@@ -220,5 +252,7 @@ footer a:hover{
     .div1 {
 
         width: 100%;
+    }
+    h2{
     }
 }

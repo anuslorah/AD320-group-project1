@@ -2,7 +2,7 @@
 
 <?php include 'includes/config.php'; ?>
 <?php include 'includes/header.php'; ?>
-
+<h2>Find a bar:</h2>
 <div id="formdiv">
 <?php include 'includes/form.php'; ?>
 	
