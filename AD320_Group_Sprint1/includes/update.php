@@ -46,7 +46,7 @@ if (isset($_POST['submit'])){
 				echo "'> <input type=\"hidden\" name=\"phone\" tabindex=\"10\" size=\"30\" value='".$row['phone'];
 				echo "'> <input type=\"hidden\" name=\"hh\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['happyHour'];
 				echo "'> <input type=\"hidden\" name=\"awesome\" cols=\"36\" rows=\"4\" tabindex=\"40\" value='".$row['awesome'];
-				echo "'> <input type=\"submit\" name=\"submit\" value=\"Edit\"> </form>";
+				echo "'> <input type=\"submit\" id=\"updatebutton\" name=\"submit\" value=\"Edit\"> </form>";
             }
             echo "</div>";
         } else {

@@ -35,32 +35,30 @@
                 $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
                 mail("migtomace@gmail.com", "Delete Request!", $msg, $headers);
-                echo "<h1>Request has been sent!</h1>";
+                echo "<h2>Request to delete the bar has been sent to administrator!</h2>";
             }
 
         } else {
             echo "    <div id=\"formdiv\">
         <form action=\"includes/delete.php\" method=\"POST\">";
+            echo "<div class='grid-container'>";
             if (isset($_SESSION['u_uid']) == "admin"){
-                echo "<label>City:</label>
-            <input type=\"text\" name=\"city\">
-            <br>
-            <label>Zip:</label>
-            <input type=\"text\" name=\"zip\">
-            <br>
-            <label>Bar ID:</label>
-            <input type=\"text\" name=\"id\">
-            <br>";
+                echo "<div class='grid-item'><label>City:</label></div>
+            <div class='grid-item2'><input type=\"text\" name=\"city\"></div>
+            <div class='grid-item'><label>Zip:</label></div>
+            <div class='grid-item2'><input type=\"text\" name=\"zip\"></div>
+            
+            <div class='grid-item'><label>Bar ID:</label></div>
+            <div class='grid-item2'><input type=\"text\" name=\"id\"></div>";
             } else {
-                echo "<label>City:</label>
-            <input type=\"text\" name=\"city\">
-            <br>
-            <label>Zip:</label>
-            <input type=\"text\" name=\"zip\">
-            <br>";
+                echo "<div class='grid-item'><label>City:</label></div>
+            <div class='grid-item2'><input type=\"text\" name=\"city\"></div>
+            <div class='grid-item'><label>Zip:</label></div>
+            <div class='grid-item2'><input type=\"text\" name=\"zip\"></div>";
             }
-            echo "<label></label><input type=\"submit\" name=\"submit\" value=\"search\">
-        </form></div>
+            echo "<div class='grid-item'><label></label></div>
+            <div class='grid-item2'><input type=\"submit\" name=\"submit\" value=\"search\"></div>
+        </div></form></div>
 
     <div id=\"fb\">";
         }

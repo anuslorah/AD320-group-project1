@@ -32,9 +32,15 @@ if (isset($_POST['submit'])){
             echo "<div class='grid-container'>";
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-				echo "<div class='grid-item'>"."Bar: ".$row['barName']."</div>". "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
+				echo "<div class='grid-item'>".$row['barName']."</div>";
+				echo "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode'];
+				echo "<br>Phone: ".$row['phone']."</div>";
+				echo "<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>";
+				echo "<div class='grid-item'>".$row['awesome']."</div>";
+				echo "<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
             }
 			echo "</div>";
+
         } else {
             echo "0 results";
         }
@@ -48,8 +54,13 @@ if (isset($_POST['submit'])){
 			echo "<div class='grid-container'>"; 
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-				echo "<div class='grid-item'>"."Bar: ".$row['barName']."</div>"."<div class='grid-item'>"."Address: ".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode']."<br>Phone: ".$row['phone']."</div>"."<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>"."<div class='grid-item'>"."Awesome: ".$row['awesome']."</div>"."<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
-				
+				echo "<div class='grid-item'>".$row['barName']."</div>";
+				echo "<div class='grid-item'>".$row['streetAddress'].", ".$row['city'].", ".$row['zipcode'];
+				echo "<br>Phone: ".$row['phone']."</div>";
+				echo "<div class='grid-item'>"."Happy Hour: ".$row['happyHour']."</div>";
+				echo "<div class='grid-item'>".$row['awesome']."</div>";
+				echo "<div class='grid-item2'></div>"."<div class='grid-item2'></div>";
+
             }
 			echo "</div>";
         } else {
