@@ -1,7 +1,7 @@
 <?php include 'includes/config.php'; ?>
 <?php include 'includes/header.php'; ?>
 
-
+<h2>Select a bar to delete: </h2>
 
         <?php
         if (isset($_POST['submit'])){

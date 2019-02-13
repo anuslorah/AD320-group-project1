@@ -7,12 +7,16 @@ html {
 	background-color: #1a2930;
 }
 
+body{
+    margin:0;
+    padding:0;
+
+}
+
 .div1 {
     /* header div*/
     overflow: hidden;
-/*    background-image: url(../images/01.jpg);*/
 	background-color: #c06014;
-/*    background-position:center;*/
     opacity: 0.8;
     height: 120px;
     position: relative;
@@ -21,27 +25,27 @@ html {
 }
 
 .div1 h2 {
-	font-family: "The Slug and Lion";
-	font-size: 80px;
-	text-align: center;
-	margin-top: 14px;
+    font-family: "The Slug and Lion";
+    font-size: 70px;
+    text-align: center;
+    margin-top: 14px;
 }
-
 div.wrapper {
     /*--main div w/nav inside--*/
-	background-color:#eddbcd;
+    background-color:#eddbcd;
     width:80%;
     overflow:auto;
-	padding-bottom: 20px;
-	margin:0 auto;
-	margin-top: 8px;
-    text-align: center;   
+    height: 460px;
+    margin:0 auto;
+    margin-top: 8px;
+    text-align: center;
 }
 
+
 #formdiv {
-  /*--put div around form--*/    
-/*  margin-top:10%;      */
-  display: inline-block; 
+  /*--put div around form--*/
+    margin-top:10%;
+    display: inline-block;
 }
 
 .grid-item {
@@ -80,6 +84,16 @@ form{
     padding-bottom: 10px;
 }
 
+#login {
+    margin: 10px;
+    text-align: center;
+    font-size:1em;
+}
+#login div {
+    margin: 10px;
+}
+
+
 label {
 /*  width: 80px;*/
   text-align: right;
@@ -106,6 +120,9 @@ input{
     text-align: left;
 }
 
+#edit input {
+    font-size:1em;
+}
 #edit label{
     width: 60%;
 }
@@ -120,12 +137,10 @@ button {
 
 footer {
     text-align: center;
-/*    background-color: black;*/
     opacity: .8;
     overflow: hidden;
     width: 80%;
     margin: 0 auto;
-    
 }
 
 footer a:link {
@@ -138,15 +153,35 @@ footer a:visited {
 
 footer a:hover{
     color: #eddbcd;
+    font-size:1.1em;
 }
 
 
 .footerfont{
     color: #eddbcd;
 }
+img:hover {
+    border:0px solid lightblue;  /* -- Increasing the px here causes icons next to it to jump --*/
+    box-shadow: 0 0 10px #eddbcd;
+}
+
+.twitter {
+    max-width:5%;
+    margin-left:5px;
+
+}
+
+img.fb,.twitter a:link{
+    color: #eddbcd;
+}
+
+img.fb,.twitter{
+    border-radius: 50%; /* --- gives round shape -- */
+}
+
 
 /*---start of @media query---*/
-@media all and (max-width:780px) {
+@media all and (max-width:790px) {
     .div1 {
         height: 60px;
         width: 90%;
@@ -161,13 +196,13 @@ footer a:hover{
     }
     
     form{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     
     #formdiv{
         margin-top: 10%;
-        width: 95%;
+        width: 70%;
         display: inline-block;
     }
 
@@ -184,7 +219,6 @@ footer a:hover{
     }
     
     .div1 {
-        
         width: 100%;
     }
 }
@@ -220,5 +254,7 @@ footer a:hover{
     .div1 {
 
         width: 100%;
+    }
+    h2{
     }
 }

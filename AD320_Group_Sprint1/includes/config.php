@@ -8,19 +8,19 @@ date_default_timezone_set('America/Los_Angeles');
 switch(THIS_PAGE)
 {    
     case 'index.php': 
-    $title = "AD320_Group_Sprint"; 
+    $title = "search for a bar";
     break;      
         
     case 'Page1.php': 
-    $title = "search for a bar"; 
+    $title = "add a new bar";
     break;
         
     case 'Page2.php': 
-    $title = "Page2"; 
+    $title = "update a bar";
     break;
     
     case 'Page3.php': 
-    $title = "Page3"; 
+    $title = "delete a bar";
     break;
         
     default: 

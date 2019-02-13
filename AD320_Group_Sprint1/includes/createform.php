@@ -1,10 +1,6 @@
 <form action="includes/create.php" method="POST">
 <div class='grid-container'>
-	<div class='grid-item'>
-		<h3>Add a bar:</h3>
-	</div>
-	<div class='grid-item2'>
-	</div>
+
 	<div class='grid-item'>
 		<label for="bar name">Bar name:</label>
 	</div>
